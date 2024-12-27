@@ -24,3 +24,39 @@ NB:  Data modeling is inherently a top-down process, starting with the conceptua
 - **The Object-oriented data model**: Represents data as objects, similar to object-oriented programming.
     - Objects contain data (attributes) and methods (functions), and can inherit from other objects.
     - This model is useful for complex data structures, like multimedia files or geographic information systems.
+
+## Database modeling in MySQL Workbench
+
+    - Forward Engineering: Translates a data model into a physical database schema.
+    - Reverse Engineering: Generates a data model from an existing database schema.
+
+
+## Data Warehousing
+- is a centralized repository that aggregates, stores, and processes large amounts of data from multiple sources, allowing for data analysis and reporting.
+- Data warehouses are typically used for business intelligence (BI) and decision-making, providing insights into historical and current data trends.
+
+Key Characteristics of Data Warehouses:
+- **Subject-Oriented**: Organized around key business subjects, like sales, customers, or products.
+- **Integrated**: Combines data from multiple sources, ensuring consistency and accuracy.
+- **Time-Variant**: Stores historical data for analysis and comparison over time.
+- **Non-Volatile**: Data is read-only and does not change once stored, ensuring data integrity.
+
+Types of Data Warehouses:
+- **structured data**: Data that is organized into a tabular format with rows and columns, like a spreadsheet.
+- **unstructured data**: Data that does not have a predefined structure, like text documents, images, or videos.
+
+## Datawarehouse Architecture:
+The design of the data warehouse's various components.
+- data sources: The systems that provide data to the warehouse, such as transactional databases, CRM systems, or external sources.
+- Data Staging: ETL (Extract, Transform, Load): Processes that extract data from source systems, transform it into a consistent format, and load it into the data warehouse.
+- Data Warehouse: The central repository that stores and manages data for analysis and reporting.
+- Data Marts: Subsets of the data warehouse that focus on specific business areas or departments.
+- Data anlytics: Tools and techniques used to analyze data and extract insights, such as OLAP (Online Analytical Processing) or data mining.
+- Presentation Layer: The interface that allows users to access and interact with the data warehouse, such as dashboards or reports.
+
+Data warehouse architiecture practices:
+- Separate analytical and transactional systems: Keep the data warehouse separate from transactional systems to avoid performance issues and ensure data integrity.
+- use scalable solutions to process large volumes of data.
+- Build a flexible architecture that can adapt to changing business needs and data sources.
+
+![datawarehouse](/advanced_data_modeling/datawarehous.png)
