@@ -13,4 +13,10 @@ db_password = os.getenv("DB_PASSWORD")
 # Connect to the database
 connection = connector.connect(user=db_user, password=db_password)
 
+# Create a cursor object using the cursor() method
+cursor = connection.cursor()
+cursor.execute("CREATE DATABASE little_lemon_db")
+cursor.execute("USE little_lemon_db")
+
+
 print("Connection successful!")
