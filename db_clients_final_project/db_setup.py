@@ -167,24 +167,24 @@ VALUES
     ('Elena Salvai', 'Head Waiter', '989 Thyme Square, EdgeWater, Chicago, IL', '351074198', 'Elena.s@littlelemon.com', '$40,000'),
     ('John Millar', 'Receptionist', '245 Dill Square, Lincoln Park, Chicago, IL', '351584508', 'John.m@littlelemon.com', '$35,000');
 """
-# Populate MenuItems table
-cursor.execute(insert_menuitems)
-connection.commit()
+# # Populate MenuItems table
+# cursor.execute(insert_menuitems)
+# connection.commit()
 
-# Populate MenuItems table
-cursor.execute(insert_menu)
-connection.commit()
+# # Populate MenuItems table
+# cursor.execute(insert_menu)
+# connection.commit()
 
-# Populate Bookings table
-cursor.execute(insert_bookings)
-connection.commit()
+# # Populate Bookings table
+# cursor.execute(insert_bookings)
+# connection.commit()
 
-# Populate Orders table
-cursor.execute(insert_orders)
-connection.commit()
+# # Populate Orders table
+# cursor.execute(insert_orders)
+# connection.commit()
 
-# Populate Employees table
-cursor.execute(insert_employees)
-connection.commit()
+# # Populate Employees table
+# cursor.execute(insert_employees)
+# connection.commit()
 
 print("Connection successful!")
