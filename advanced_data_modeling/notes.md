@@ -60,3 +60,7 @@ Data warehouse architiecture practices:
 - Build a flexible architecture that can adapt to changing business needs and data sources.
 
 ![datawarehouse](/advanced_data_modeling/datawarehous.png)
+
+
+# Dimensional Data Modeling
+- Dimensional data modeling is a technique used in data warehousing to organize and structure data for analysis and reporting.
