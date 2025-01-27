@@ -64,3 +64,91 @@ Data warehouse architiecture practices:
 
 # Dimensional Data Modeling
 - Dimensional data modeling is a technique used in data warehousing to organize and structure data for analysis and reporting.
+- it focuses on the usability and performance of queries in a data warehouse and is widely used for analytical purposes.
+
+---
+
+### Key Concepts of Dimensional Data Modeling
+
+1. **Fact Table**
+   - A fact table stores quantitative data (measurable metrics or facts) for analysis.
+   - Examples: Sales amount, quantity sold, revenue, profit.
+   - Columns:
+     - **Foreign Keys**: Reference dimension tables (e.g., Product ID, Date ID).
+     - **Measures/Facts**: Numerical values (e.g., sales revenue, total cost).
+
+2. **Dimension Tables**
+   - Dimension tables store descriptive, textual data that provide context for the facts.
+   - Examples: Customer, Product, Time, Location.
+   - Columns:
+     - **Attributes**: Descriptive fields (e.g., Product Name, Customer Name, Year, Region).
+
+3. **Star Schema**
+   - A simple and common dimensional modeling approach.
+   - Structure: A central fact table linked to multiple dimension tables.
+   - Advantage: Easy to understand and query.
+
+   Example:
+   ```
+                 Time Dimension
+                      |
+   Customer Dimension - Fact Table - Product Dimension
+                      |
+               Location Dimension
+   ```
+
+4. **Snowflake Schema**
+   - An extension of the star schema where dimension tables are normalized into multiple related tables.
+   - Advantage: Reduces redundancy.
+   - Disadvantage: Slightly more complex queries.
+
+5. **Grain**
+   - Grain defines the level of detail represented by the fact table.
+   - Example: Sales per day, per product, per store.
+
+6. **Measures**
+   - Aggregated data in the fact table.
+   - Examples: Sum, average, count, min, max of sales, revenue, or profits.
+
+7. **Slowly Changing Dimensions (SCDs)**
+   - Tracks changes in dimension attributes over time.
+   - Types:
+     - **Type 1:** Overwrite the old value.
+     - **Type 2:** Create a new row for each change.
+     - **Type 3:** Add a new column for the previous value.
+
+---
+
+### **Steps to Build Dimensional Data Models**
+1. **Identify Business Requirements**
+   - Understand the KPIs, metrics, and reporting needs.
+2. **Determine the Grain**
+   - Decide the level of detail for the data.
+3. **Identify Dimensions**
+   - Define the descriptive data (e.g., customers, products, time).
+4. **Identify Facts**
+   - Determine the metrics to measure (e.g., sales revenue, profit).
+5. **Design the Schema**
+   - Create the star or snowflake schema.
+6. **ETL Process**
+   - Extract, Transform, Load (ETL) data into the fact and dimension tables.
+
+---
+
+### **Advantages of Dimensional Data Modeling**
+1. **Improved Query Performance:** Designed for faster data retrieval.
+2. **Simplicity:** Easy for business users to understand.
+3. **Flexibility:** Enables slicing and dicing data for analysis.
+4. **Scalability:** Can handle large datasets effectively.
+
+---
+
+### **Use Case Example: E-Commerce**
+- **Fact Table:** Sales Fact
+  - Facts: Revenue, Quantity Sold, Discount.
+  - Foreign Keys: Product ID, Date ID, Customer ID.
+- **Dimension Tables:**
+  - **Product Dimension:** Product ID, Name, Category, Price.
+  - **Customer Dimension:** Customer ID, Name, Age, Region.
+  - **Time Dimension:** Date ID, Day, Month, Quarter, Year.
+
