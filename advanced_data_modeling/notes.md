@@ -152,3 +152,25 @@ Data warehouse architiecture practices:
   - **Customer Dimension:** Customer ID, Name, Age, Region.
   - **Time Dimension:** Date ID, Day, Month, Quarter, Year.
 
+# Introduction to Data Analytics
+- Data analytics is the process of analyzing, interpreting, and visualizing data to extract insights and make informed decisions.
+- It involves applying statistical, mathematical, and computational techniques to identify trends, patterns, and relationships in data.
+
+--- Types of Data Analytics
+
+- Descriptive: Presents data in a descriptive format.
+- Exploratory: Establishes relationships between variables.
+- Inferential: Makes inferences from a small sample.
+- Predictive: Identifies patterns to predict future performance.
+- Causal: Explores cause and effect relationships.
+
+Types of Data:
+
+- Quantitative: Numerical data (e.g., average number of customers).
+- Qualitative: Non-numerical data (e.g., product descriptions).
+
+Measurement Scales:
+   - Nominal Scale: Descriptive, identifies data (e.g., product names).
+   - Ordinal Scale: Ranks data without precise differences (e.g., product ratings).
+   - Interval Scale: Identifies differences with specific criteria (e.g., feedback scores).
+   - Ratio Scale: Includes absolute values and clear intervals (e.g., product weights).
