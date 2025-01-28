@@ -174,3 +174,20 @@ Measurement Scales:
    - Ordinal Scale: Ranks data without precise differences (e.g., product ratings).
    - Interval Scale: Identifies differences with specific criteria (e.g., feedback scores).
    - Ratio Scale: Includes absolute values and clear intervals (e.g., product weights).
+
+
+# Data Mining and Machine Learning: 
+ - These are advanced data analytics methods used to analyze large datasets. 
+
+- **Data Mining:** Involves detecting patterns in data to gain insights and make predictions. For example, identifying that customers who buy tables often buy chairs.
+- **Machine Learning:** Teaches computers to learn from data. It includes:
+   - **Supervised Learning: Classifying data based on labels (e.g., labeling images of products).
+   - **Unsupervised Learning: Classifying data based on shared characteristics without labels.
+
+**Data Mining Models:**
+
+- **Classification Analysis:** Assigns data into categories for predictions.
+- **Association Rule**: Identifies relationships between different data elements.
+- **Outlier Detection**: Reveals unusual data points.
+- **Clustering Analysis**: Groups data based on similarities.
+- **Regression Analysis**: Analyzes relationships between different factors impacting data.
